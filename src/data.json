@@ -1,0 +1,52 @@
+[
+    {
+        "id":1,
+        "front": "pink",
+        "back": "яблоко"
+    },
+    {
+        "id":2,
+        "front": "red",
+        "back": "красный"
+    },
+    {
+        "id":3,
+        "front": "yellow",
+        "back": "жёлтый"
+    },
+    {
+        "id":4,
+        "front": "lightblue",
+        "back": "голубой"
+    },
+    {
+        "id":5,
+        "front": "blue",
+        "back": "синий"
+    },
+    {
+        "id":6,
+        "front": "green",
+        "back": "зеленый"
+    },
+    {
+        "id":7,
+        "front": "orange",
+        "back": "оранжевый"
+    },
+    {
+        "id":8,
+        "front": "white",
+        "back": "белый"
+    },
+    {
+        "id":9,
+        "front": "purple",
+        "back": "фиолетовый"
+    },
+    {
+        "id":10,
+        "front": "black",
+        "back": "чёрный"
+    }
+]

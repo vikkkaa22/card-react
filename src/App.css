@@ -1,0 +1,70 @@
+.container {
+  height: 100%;
+  min-height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+header,
+footer {
+  background: lavender;
+}
+
+.header {
+  background-color: rgb(123, 94, 156);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  gap: 30px;
+}
+
+h2 {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitle {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  max-width: 300px;
+  min-height: 300px;
+  margin: 20px auto;
+  align-items: center;
+  justify-content: center;
+  background-color: antiquewhite;
+  border: solid 1px gray;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.card-check {
+  transform: rotateX(180deg);
+}
+
+.card::after {
+  content: attr(data-back);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lemonchiffon;
+  border: solid 1px gray;
+  border-radius: 10px;
+  transform: rotateX(180deg);
+  backface-visibility: hidden;
+}
