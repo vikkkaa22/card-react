@@ -1,0 +1,8 @@
+.header {
+  background-color: rgb(109, 206, 245);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  gap: 30px;
+}

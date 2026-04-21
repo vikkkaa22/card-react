@@ -1,0 +1,35 @@
+.card {
+  position: relative;
+  display: flex;
+  max-width: 300px;
+  min-height: 300px;
+  margin: 20px auto;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  background-color: rgb(109, 206, 245);
+  border: solid 4px rgb(102, 191, 226);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.card-check {
+  transform: rotateX(180deg);
+}
+
+.card::after {
+  content: attr(data-back);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(108, 230, 213);
+  border-radius: 10px;
+  transform: rotateX(180deg);
+  backface-visibility: hidden;
+}
