@@ -1,12 +1,21 @@
 import { useState } from "react";
-import cards from "../data.json";
 import { Card } from "./Card";
 import "./Set.css"
 
+import data from "../data.json";
+import { useLocation, useParams } from "react-router-dom";
+
 export function Set() {
+    const param = useParams();
+    console.log(param.id);
+
+    const location = useLocation()
+    const set = location.state.set
+    const cards = data.filter((item) => item.setName === set);
     const [step, setStep] = useState(0);
 
     const nextCard = () => {
+
         if (step < cards.length - 1) {
             setStep(step + 1);
         }
@@ -20,7 +29,7 @@ export function Set() {
 
     return (
         <div>
-            <h2>Цвета на английском</h2>
+            <h2>{set}</h2>
 
             <Card
                 key={cards[step].id}

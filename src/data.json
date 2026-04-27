@@ -1,52 +1,62 @@
 [
     {
-        "id":1,
+        "id": 1,
         "front": "pink",
-        "back": "розовый"
+        "back": "розовый",
+        "setName": "English"
     },
     {
-        "id":2,
+        "id": 2,
         "front": "red",
-        "back": "красный"
+        "back": "красный",
+        "setName": "English"
     },
     {
-        "id":3,
-        "front": "yellow",
-        "back": "жёлтый"
-    },
-    {
-        "id":4,
-        "front": "lightblue",
-        "back": "голубой"
-    },
-    {
-        "id":5,
-        "front": "blue",
-        "back": "синий"
-    },
-    {
-        "id":6,
-        "front": "green",
-        "back": "зеленый"
-    },
-    {
-        "id":7,
-        "front": "orange",
-        "back": "оранжевый"
-    },
-    {
-        "id":8,
-        "front": "white",
-        "back": "белый"
-    },
-    {
-        "id":9,
-        "front": "purple",
-        "back": "фиолетовый"
-    },
-    {
-        "id":10,
+        "id": 3,
         "front": "black",
-        "back": "чёрный"
+        "back": "чёрный",
+        "setName": "English"
+    },
+    {
+        "id": 4,
+        "front": "10-6",
+        "back": "4",
+        "setName": "Math"
+    },
+    {
+        "id": 5,
+        "front": "3+3",
+        "back": "6",
+        "setName": "Math"
+    },
+    {
+        "id": 6,
+        "front": "7*5",
+        "back": "35",
+        "setName": "Math"
+    },
+    {
+        "id": 7,
+        "front": "Russia",
+        "back": "Mosсow",
+        "setName": "Сapitals"
+    },
+    {
+        "id": 8,
+        "front": "France",
+        "back": "Paris",
+        "setName": "Сapitals"
+    },
+    {
+        "id": 9,
+        "front": "Czech",
+        "back": "Prague",
+        "setName": "Сapitals"
+    },
+    {
+        "id": 10,
+        "front": "Great Britain",
+        "back": "London",
+        "setName": "Сapitals"
     }
 ]

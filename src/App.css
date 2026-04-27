@@ -1,22 +1,18 @@
-.container {
-  height: 100%;
-  min-height: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+body {
+    margin: 0;
+    background: #f5f7fb;
+    font-family: Arial, sans-serif;
 }
 
-header,
-footer {
-  background: lavender;
+.page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px;
 }
 
-h2 {
-  color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.page__title {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 /*-----------------хедер---------------------------*/
