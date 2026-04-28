@@ -5,23 +5,37 @@ import { useForm } from "react-hook-form";
 
 export function FormCreateSet() {
 
-    // const [name, setName] = useState("");
-    // const [description, setDescription] = useState("");
+    // const [name, setName] = useInput('');
+    // const [description, setDescription] = useInput('');
 
+    // function handleSubmit(e) {
+    //     e.preventDefault();
+    //     console.log(name, discription);        
+    // }
+    
+    const [count, setCount] = React.useState(0);
 
-    const { register, handleSubmit, formState: { errors } }
+    React.useEffect(() => {
+        if(count !== 0){
+        console.log(`Отправка формы : ${count}`);
+        alert(`Отправка формы : ${count}`);
+        }
+    }, [count]);
+
+    
+        const { register, handleSubmit, formState: { errors } }
         = useForm({
             defaultValues: {
                 name: "",
                 discription: ""
             }
         });
-    console.log(errors);
 
     return (
         <form
             className="form"
             onSubmit={handleSubmit((data) => {
+                setCount(count + 1);
                 console.log(data);
             })}
         >
