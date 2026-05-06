@@ -27,7 +27,7 @@ import { FormCreateCard } from "./components/FormCreateCard";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/card-react'>
       <Routes>
         <Route path="/" element={<PageSelectSet />} />
         <Route path="/set/:id" element={<PageViewSet />} />
